@@ -6,16 +6,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="snowstorm.js"></script>
     <link rel="stylesheet" href="style.css">
+<script language="javascript" type="text/javascript">
+function clock() {
+var date = new Date()
+var day = date.getDate()
+var daysTilChristmas = 25 - day
+function setFavicons(favImg){
+    let headTitle = document.querySelector('head');
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    let favIcons = [
+        { rel: 'apple-touch-icon' },
+        { rel: 'apple-touch-startup-image' },
+        { rel: 'shortcut icon' }
+    ]
+    
+    favIcons.forEach(function(favIcon){
+        let setFavicon = document.createElement('link');
+        setFavicon.setAttribute('rel', favIcon.rel);
+        setFavicon.setAttribute('href', favImg);
+        headTitle.appendChild(setFavicon);
+    });
+}
+if (daysTilChristmas == 0) {
+  document.title = "HAPPY HOLIDAYS!"
+  setFavicons('gift.png');
 
-    <title>Hello, world!</title>
+} else{
+    document.title = "There are " + daysTilChristmas + " days til christmas!"
+    setFavicons('tree.png');
+  }
+}
+</script>
+    <title>Happy christmas!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<body onLoad="clock()">
+    <div>
+    <ul class="lightrope">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+</div>
+        <div>
+        <h1>HAPPY HOLIDAYS!</h1>
+        </div>
+    <script> 
+snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+snowStorm.followMouse = true; //Allows snow to move dynamically with the "wind", relative to the mouse's X (left/right) coordinates.
 
+snowStorm.freezeOnBlur = true; //Stops the snow effect when the browser window goes out of focus, eg., user is in another tab. Saves CPU, nicer to user.
+snowStorm.useMeltEffect = true; //When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
+snowStorm.useTwinkleEffect = true; //Allow snow to randomly "flicker" in and out of view while falling
+snowStorm.randomizeWind() //Sets the wind speed with a random value relative to vMaxX and vMaxY properties.
+</script>
   </body>
 </html>
