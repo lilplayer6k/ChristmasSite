@@ -11,6 +11,7 @@ function clock() {
 var date = new Date()
 var day = date.getDate()
 var daysTilChristmas = 25 - day
+var daysTilNewYears = 31 - day
 function setFavicons(favImg){
     let headTitle = document.querySelector('head');
     
@@ -33,6 +34,12 @@ if (daysTilChristmas == 0) {
 
 } else{
     document.title = "There are " + daysTilChristmas + " days til christmas!"
+    setFavicons('tree.png');
+  }
+  if (daysTilChristmas <= -1){
+    document.title = "There are " + daysTilNewYears + " days til New Years!"
+  } else{
+    document.title = "Happy New Years!!"
     setFavicons('tree.png');
   }
 }
